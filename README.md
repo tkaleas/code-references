@@ -19,14 +19,19 @@ Hopefully this reference list will be useful to someone else too.
 #### Models
 ### 3D Package Guides/Tutorials
 ##### Houdini
+- [**Houdini File Upgrader**](https://www.orbolt.com/upgrade-houdini-files)
+- [Entagma](http://www.entagma.com/category/tutorials/)
 - https://www.sidefx.com/tutorials/?title=&user=&categories=&level=2&version=&paid=?title=&user=&categories=&level=2&version=&paid=
-- http://www.entagma.com/category/tutorials/
 - http://www.tokeru.com/cgwiki/?title=Houdini
 - https://sites.google.com/site/fujitarium/Houdini/sop/wrangle
 - https://sites.google.com/site/pqhoudinitutorial/home
 - [Gam Dev Toolset](https://www.sidefx.com/tutorials/game-development-toolset-overview/)
-- [**Houdini File Upgrader**](https://www.orbolt.com/upgrade-houdini-files)
+- [Steve Knipping's Applied Houdini](http://www.appliedhoudini.com/)
+- [Houdini Youtube](https://www.youtube.com/channel/UCegWLyW4CYzph4dYW-gYy0g)
+- [FX Hive] (https://www.youtube.com/channel/UChjPbw5vMBUTLN0teKEM0BA)
+
 ##### Blender
+- [Blender Guru](https://www.youtube.com/channel/UCOKHwx1VCdgnxwbjyb9Iu1g)
 ### Film
 Art of VFX
 Breakdowns
@@ -36,12 +41,13 @@ Breakdowns
 - https://thebookofshaders.com/13/
 - https://iquilezles.org/index.html
 - [Real Time Rendering](http://www.realtimerendering.com/blog/)
-
-#### UX and Interactivity
+#### UX and Interactivity (Mostly VR)
 - https://www.uxofvr.com/
+- https://www.youtube.com/channel/UChvlNUgZKmEd-Gul_Tdv8Uw
+
+
+
 #### Game Engines
-
-
 
 ##### Unreal Engine 4
 - https://docs.unrealengine.com/latest/INT/Programming/Rendering/ShaderDevelopment/index.html
@@ -53,6 +59,7 @@ Breakdowns
 - [UE4 Logging](https://wiki.unrealengine.com/Logs,_Printing_Messages_To_Yourself_During_Runtime)
 - [UE4 Widget Interaction](https://docs.unrealengine.com/latest/INT/Engine/UMG/HowTo/InWorldWidgetInteraction/index.html)
 - [PopCorn FX Plugin](https://github.com/PopcornFX/UE4PopcornFXPlugin)
+- [UE4 Tutorial Playlist](https://www.youtube.com/playlist?list=PLZlv_N0_O1gaCL2XjKluO7N2Pmmw9pvhE)
 
 ##### UE4 Continuous Integration
 - [UE4 Small Team](http://hiderek.com/post/110141158112/unreal-engine-4-and-a-small-team-day-134)
@@ -61,12 +68,17 @@ Breakdowns
 - [UE4 Build Guide - Extroforge](http://www.extroforge.com/unreal-build-automation-and-deployment-at-extroforge/)
 
 ##### Unity
+
+[Unity3D College](https://www.youtube.com/channel/UCX_b3NNQN5bzExm-22-NVVg)
+
+
 #### Real Time VFX
+- [RealTimeVFX.com](https://realtimevfx.com/)
 - https://80.lv/articles/real-time-vfx-artists-you-should-follow/
 - [Popcorn FX](http://wiki.popcornfx.com/index.php/Particle_tutorials#Editor_tutorials)
 - [Klemen Lozar's Motion Vectors Guide](http://www.klemenlozar.com/frame-blending-with-motion-vectors/)
 - [Fallout 4 Mushroom Breakdown](https://simonschreibt.de/gat/fallout-4-the-mushroom-case/)
-
+- [UE4 Particle Guide - Yoeri](https://www.youtube.com/channel/UCWfkqFjkMqQp6i-HwpWJ09A)
 ---
 ## Code
 ### Interviewing
@@ -93,15 +105,13 @@ Breakdowns
 - https://www.learnpython.org/
 - https://en.wikibooks.org/wiki/Python_Programming/Input_and_Output
 - http://blog.endpoint.com/2015/01/getting-realtime-output-using-python.html
-
-#### C++
 #### C#
 - https://csharp.net-tutorials.com/
-#### [Mobile and Web](mobile_web.md)
 #### Rust
 - https://doc.rust-lang.org/book/2018-edition/index.html
 #### PowerShell
 - https://developer.rackspace.com/blog/powershell-101-from-a-linux-guy/
+### [Mobile and Web](mobile_web.md)
 
 ---
 ## Misceleanous
