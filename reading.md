@@ -44,22 +44,22 @@ others are just for fun. Some are free, the ones that aren't I've linked to Amaz
 - [Effective Modern C++](https://www.amazon.com/Effective-Modern-Specific-Ways-Improve/dp/1491903996/ref=pd_bxgy_img_2/136-3043400-5095605?_encoding=UTF8&pd_rd_i=1491903996&pd_rd_r=37d14678-3f0c-11e9-9c0b-cb09ebcd933f&pd_rd_w=30V1T&pd_rd_wg=HYzXQ&pf_rd_p=6725dbd6-9917-451d-beba-16af7874e407&pf_rd_r=40ZPQWPZH264NPX8XFZE&psc=1&refRID=40ZPQWPZH264NPX8XFZE)
 
 ## Agile
-- https://www.amazon.com/Scrum-Field-Guide-Addison-Wesley-Signature/dp/0133853624/ref=sr_1_1?ie=UTF8&qid=1548955688&sr=8-1&keywords=scrum+field+guide
-- https://www.amazon.com/gp/product/1491904909/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1
-- https://www.amazon.com/Lean-UX-Designing-Great-Products/dp/1491953608/ref=sr_1_1?ie=UTF8&qid=1550262288&sr=8-1&keywords=Lean+UX%3A+Designing+Great+Products+with+Agile+Teams
-- https://www.amazon.com/Design-Sprint-Practical-Guidebook-Building/dp/1491923172/ref=sr_1_1?ie=UTF8&qid=1550262308&sr=8-1&keywords=Design+Sprint%3A+A+Practical+Guidebook+for+Building+Great+Digital+Products
-- https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/0593076117/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1550262331&sr=8-1
+-  [Scrum Field Guide](https://www.amazon.com/Scrum-Field-Guide-Addison-Wesley-Signature/dp/0133853624/ref=sr_1_1?ie=UTF8&qid=1548955688&sr=8-1&keywords=scrum+field+guide)
+- [User Story Mapping](https://www.amazon.com/gp/product/1491904909/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1)
+- [Lean UX]( https://www.amazon.com/Lean-UX-Designing-Great-Products/dp/1491953608/ref=sr_1_1?ie=UTF8&qid=1550262288&sr=8-1&keywords=Lean+UX%3A+Designing+Great+Products+with+Agile+Teams)
+- [Design Sprint: Practical Guidebook to Building...](https://www.amazon.com/Design-Sprint-Practical-Guidebook-Building/dp/1491923172/ref=sr_1_1?ie=UTF8&qid=1550262308&sr=8-1&keywords=Design+Sprint%3A+A+Practical+Guidebook+for+Building+Great+Digital+Products)
+- [Sprint: Solve Problems Test Ideas](https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/0593076117/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1550262331&sr=8-1)
 
 ## Games
-- "	https://www.amazon.com/Development-Deployment-Multiplayer-Online-Games/dp/3903213055/ref=sr_1_sc_1?ie=UTF8&qid=1548957331&sr=8-1-spell&keywords=Multiplayer+gamed+developmetn"
-https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=GAME+PROGRAMMING+GEMS
-- 
+- [Multiplayer Online Games](	https://www.amazon.com/Development-Deployment-Multiplayer-Online-Games/dp/3903213055/ref=sr_1_sc_1?ie=UTF8&qid=1548957331&sr=8-1-spell&keywords=Multiplayer+gamed+developmetn)
+- [Game Programming Gems](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=GAME+PROGRAMMING+GEMS)
 ## Robert Martin (Gets his Own Section)
 
 ## Machine Learning
 - Intro Books
-- http://www-bcf.usc.edu/~gareth/ISL/
-- https://nbviewer.jupyter.org/github/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/blob/master/Prologue/Prologue.ipynb
+- [Introduction to Statiscal Learning](http://www-bcf.usc.edu/~gareth/ISL/)
+- [Probabilistic Programming and 
+Bayesian Methods for Hackers ](https://nbviewer.jupyter.org/github/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/blob/master/Prologue/Prologue.ipynb)
 
 - Super Harsh Guide
 ## Algorithms

@@ -24,14 +24,14 @@ Hopefully this reference list will be useful to someone else too.
 ##### Houdini
 - [**Houdini File Upgrader**](https://www.orbolt.com/upgrade-houdini-files)
 - [Entagma](http://www.entagma.com/category/tutorials/)
-- [SideFx Tutorials]https://www.sidefx.com/tutorials/?title=&user=&categories=&level=2&version=&paid=?title=&user=&categories=&level=2&version=&paid=
+- [SideFx Tutorials](https://www.sidefx.com/tutorials/?title=&user=&categories=&level=2&version=&paid=?title=&user=&categories=&level=2&version=&paid=)
 - [Houdini CGWiki](http://www.tokeru.com/cgwiki/?title=Houdini)
-- [Ryogi CG Memo](https://sites.google.com/site/fujitarium/Houdini/sop/wrangle
-- [PQ Houdini Tutroials](https://sites.google.com/site/pqhoudinitutorial/home
+- [Ryogi CG Memo](https://sites.google.com/site/fujitarium/Houdini/sop/wrangle)
+- [PQ Houdini Tutroials](https://sites.google.com/site/pqhoudinitutorial/home)
 - [Gam Dev Toolset](https://www.sidefx.com/tutorials/game-development-toolset-overview/)
 - [Steve Knipping's Applied Houdini](http://www.appliedhoudini.com/)
 - [Houdini Youtube](https://www.youtube.com/channel/UCegWLyW4CYzph4dYW-gYy0g)
-- [FX Hive] (https://www.youtube.com/channel/UChjPbw5vMBUTLN0teKEM0BA)
+- [FX Hive](https://www.youtube.com/channel/UChjPbw5vMBUTLN0teKEM0BA)
 - [Procedural Art - Anastasia Opara](https://www.anastasiaopara.com/blog)
 
 ##### Blender
