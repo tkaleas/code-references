@@ -9,7 +9,7 @@ As a lot of these technologies are constantly changing, hopefully a lot of conte
 Hopefully this reference list will be useful to someone else too.
 
 ---
-## [Reading List](reading.md)
+### [Reading List](reading.md)
 
 ---
 ## Graphics
@@ -32,6 +32,7 @@ Hopefully this reference list will be useful to someone else too.
 - [Steve Knipping's Applied Houdini](http://www.appliedhoudini.com/)
 - [Houdini Youtube](https://www.youtube.com/channel/UCegWLyW4CYzph4dYW-gYy0g)
 - [FX Hive] (https://www.youtube.com/channel/UChjPbw5vMBUTLN0teKEM0BA)
+- [Procedural Art - Anastasia Opara](https://www.anastasiaopara.com/blog)
 
 ##### Blender
 - [Blender Guru](https://www.youtube.com/channel/UCOKHwx1VCdgnxwbjyb9Iu1g)
@@ -94,9 +95,9 @@ Breakdowns
 - https://github.com/jwasham/coding-interview-university
 - https://github.com/andreis/interview
 #### Practice
-- https://nerdparadise.com/
-- [topcoder](https://www.topcoder.com/)
-- [leetcode](https://leetcode.com/)
+- [Nerd Paradise]https://nerdparadise.com/
+- [TopCoder](https://www.topcoder.com/)
+- [LeetCode](https://leetcode.com/)
 
 ### Languages
 #### C++
