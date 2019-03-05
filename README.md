@@ -9,13 +9,16 @@ As a lot of these technologies are constantly changing, hopefully a lot of conte
 Hopefully this reference list will be useful to someone else too.
 
 ---
+## [Reading List](reading.md)
+
+---
 ## Graphics
 ### Resources
 #### Textures
 ##### Maps
-- https://www.poliigon.com/search?category=Streets
+- [Poliigon - Free Textures](https://www.poliigon.com/search?category=Streets)
 ##### SkyMaps (HDR)
-- https://hdrihaven.com/p/about-contact.php
+- [HDRI - Free HDRI Maps](https://hdrihaven.com/p/about-contact.php)
 #### Models
 ### 3D Package Guides/Tutorials
 ##### Houdini
