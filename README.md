@@ -119,7 +119,8 @@ Breakdowns
 
 ---
 ## Misceleanous
-
+### Github
+[GIthub Markdown Guide](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 ### Machine Learning
 - [Deep Learning for Computer Graphics](http://geometry.cs.ucl.ac.uk/dl4g/)
 - [Andrew Ng's Machine Learning - Coursera](https://www.coursera.org/learn/machine-learning)
