@@ -100,6 +100,9 @@ Breakdowns
 - [LeetCode](https://leetcode.com/)
 
 ### Languages
+#### GLSL (Shaders)
+[The Book of Shaders](https://thebookofshaders.com/05/)
+
 #### C++
 #### Python
 - [Free Python Books](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#python) : A bunch of free python books (and other programming languages/agnostic as well)
