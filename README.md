@@ -98,11 +98,14 @@ Breakdowns
 - [Nerd Paradise]https://nerdparadise.com/
 - [TopCoder](https://www.topcoder.com/)
 - [LeetCode](https://leetcode.com/)
+- [Shader Toy](https://www.shadertoy.com/)
+- [Book of Shaders](http://editor.thebookofshaders.com/)
+
+### Maths
+#### Linear Algebra
+[Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
 ### Languages
-#### GLSL (Shaders)
-[The Book of Shaders](https://thebookofshaders.com/05/)
-
 #### C++
 #### Python
 - [Free Python Books](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#python) : A bunch of free python books (and other programming languages/agnostic as well)
