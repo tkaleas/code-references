@@ -9,7 +9,11 @@ As a lot of these technologies are constantly changing, hopefully a lot of conte
 Hopefully this reference list will be useful to someone else too.
 
 ---
+## Other Reading
 ### [Reading List](reading.md)
+## Book Notes
+### [Game Engine Architecture](notes/game_engine_arch.md)
+### [Real Time Rendering](notes/rt_rendering.md)
 
 ---
 ## Graphics
