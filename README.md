@@ -79,7 +79,6 @@ Breakdowns
 
 [Unity3D College](https://www.youtube.com/channel/UCX_b3NNQN5bzExm-22-NVVg)
 
-
 #### Real Time VFX
 - [RealTimeVFX.com](https://realtimevfx.com/)
 - https://80.lv/articles/real-time-vfx-artists-you-should-follow/
@@ -87,6 +86,8 @@ Breakdowns
 - [Klemen Lozar's Motion Vectors Guide](http://www.klemenlozar.com/frame-blending-with-motion-vectors/)
 - [Fallout 4 Mushroom Breakdown](https://simonschreibt.de/gat/fallout-4-the-mushroom-case/)
 - [UE4 Particle Guide - Yoeri](https://www.youtube.com/channel/UCWfkqFjkMqQp6i-HwpWJ09A)
+- [Tharle VFX Reading List](http://www.tharlevfx.com/reading-list)
+
 ---
 ## Code
 ### Interviewing

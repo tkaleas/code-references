@@ -31,9 +31,10 @@ others are just for fun. Some are free, the ones that aren't I've linked to Amaz
 - Elements of Programming Interviews
 
 ### Computer Graphics
-- Game Engine Arrchitecutre
+- Game Engine Architecture
 - Foundations of Game Engine Development
 - Real-Time Rendering
+	- [Real-Time Rendering Website](http://www.realtimerendering.com/)
 - Elemental Magic (Vol I and II)
 
 ### Languages
