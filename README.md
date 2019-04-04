@@ -45,10 +45,12 @@ Art of VFX
 Breakdowns
 ### Real-Time (Games/VR)
 #### Code and Shaders
-- https://learnopengl.com/Getting-started/Creating-a-window
+- [KodeLife](https://hexler.net/software/kodelife/)]
+- https://learnopengl.com/
 - https://thebookofshaders.com/13/
 - https://iquilezles.org/index.html
 - [Real Time Rendering](http://www.realtimerendering.com/blog/)
+
 #### UX and Interactivity (Mostly VR)
 - https://www.uxofvr.com/
 - https://www.youtube.com/channel/UChvlNUgZKmEd-Gul_Tdv8Uw
@@ -105,6 +107,7 @@ Breakdowns
 - [LeetCode](https://leetcode.com/)
 - [Shader Toy](https://www.shadertoy.com/)
 - [Book of Shaders](http://editor.thebookofshaders.com/)
+
 
 ### Maths
 #### Linear Algebra
