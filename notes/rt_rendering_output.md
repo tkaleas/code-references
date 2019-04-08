@@ -275,6 +275,8 @@ f_dir_t(l)=smoothstep(t)
 	- cylindrical, planar, unwrapped UV per vertex (mesh parameterization)
 	- cube map another form of directional coordinate space
   
+  
+  
 ## Chapter 19: Acceleration Algorithms
   
   
@@ -298,7 +300,7 @@ f_dir_t(l)=smoothstep(t)
   - estimation of radius of projected sphere on screen
     - object: (circle center point c, radius r)
     - viewer(position v, direction d)
-  <img src="https://latex.codecogs.com/gif.latex?$p=&#x5C;frac{nr}{d&#x5C;cdot{(v-c)}}"/>
+  <img src="https://latex.codecogs.com/gif.latex?$p=&#x5C;frac{nr}{d&#x5C;cdot{(v-c)}}"/>^
   
 #### Terrain Rendering
   
@@ -318,18 +320,17 @@ f_dir_t(l)=smoothstep(t)
   - crack repair:
     - bridge gap between 2 tiles [324,670]
     - vertex shader solution [1720]
-  - [299,244]
-  - 
+    - [299,244]
   
 ##### Terrain References
   
-[82] Terrain Rendering Using GPU-Based Geometry, *Gpu Gems 2*
-[555] Landscape Creation and Rendering in REDEngine 3
-[1078] Geometry Clipmaps: Terrain Rendering Using Nested Regular Grids
-[1605] SIGGRAPH REndering MAssive Virtual Worlds Course
+- [82] Terrain Rendering Using GPU-Based Geometry, *Gpu Gems 2*
+- [555] Landscape Creation and Rendering in REDEngine 3
+- [1078] Geometry Clipmaps: Terrain Rendering Using Nested Regular Grids
+- [1605] SIGGRAPH REndering MAssive Virtual Worlds Course
 	-https://cesiumjs.org/hosted-apps/massiveworlds/
-[324] Binary Triangle Trees for Terrain Tile INdex Buffer Generation
+- [324] Binary Triangle Trees for Terrain Tile INdex Buffer Generation
 	-https://www.gamasutra.com/view/feature/130171/binary_triangle_trees_for_terrain_.php
-[670] Real Time Cloud Rendering
-[1720] Continuous Distance Dependant Level of Detail for Rendering Heightmaps
+- [670] Real Time Cloud Rendering
+- [1720] Continuous Distance Dependant Level of Detail for Rendering Heightmaps
   

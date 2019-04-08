@@ -37,6 +37,9 @@ Hopefully this reference list will be useful to someone else too.
 - [Houdini Youtube](https://www.youtube.com/channel/UCegWLyW4CYzph4dYW-gYy0g)
 - [FX Hive](https://www.youtube.com/channel/UChjPbw5vMBUTLN0teKEM0BA)
 - [Procedural Art - Anastasia Opara](https://www.anastasiaopara.com/blog)
+- [qLib A procedural asset library for SideFX Houdini](http://qlab.github.io/qLib/)
+- [Nature Design with Houdini](https://www.youtube.com/playlist?list=PLzRzqTjuGIDgnYunqLTthY9RdVMTs6BzN)
+  - [Nature Design With Houdini Github](https://github.com/jhorikawa/nature-design-with-houdini-book)
 
 ##### Blender
 - [Blender Guru](https://www.youtube.com/channel/UCOKHwx1VCdgnxwbjyb9Iu1g)

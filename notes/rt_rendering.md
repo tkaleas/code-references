@@ -278,12 +278,51 @@ f_dir_t(l)=smoothstep(t)
 - Gamma Correction: raise to power 1/2.2
 - based on CRT monitor display functions, we want to cancel out the effect of this so apply inverse function to bring back to a normal range.
 
-
 ## Chapter 6: Texturing
+### Texturing Pipeline
 - texels: to differentiate from pixels on the screen
 - projector function: changes from (x,y,z) to (u,v) coordinates
 	- cylindrical, planar, unwrapped UV per vertex (mesh parameterization)
 	- cube map another form of directional coordinate space
+
+```mermaid
+graph LR
+P[Projector Function] -->C[Corresponder Function];
+C --> O[Obtain Value];
+O --> V[Value Transform Function]
+```
+
+#### Projection Function
+- move from 3 to 2 dimensional space, $(u,v)$ coordinates.
+
+#### Corresponder Function
+- convert texture coordinates to texture space location.
+- can also be matrix transform applied to vertex or pixel shader
+  - transform texture before projecting on surface
+- Wrapping Modes: what happens to texture outside of 0-1 bounds
+  - wrap,repeat,tile
+  - mirror
+  - clamp
+  - border (clamp to border)
+
+#### Image Texturing
+- texutre coordinates on pixel to texel coordinates on texture
+- where is the center of the pixel? (0,0) or (0.5,.0)?
+  - truncate (floor) or round up/down to get correct coordinate
+- **Dependant Texture Read**: when texture read value is dependant on result of previous texture value, ie shanding shading normal -> changes cube map texture coordinates
+  - can potentially impact performance
+- Power Of Two Textures:  $2^m\times2^n$ m and n not negative integers
+##### Magnification
+- when textures are viewed up closer than texture size per pixel.
+- *nearest neighbor*: pixelation, value of nearest texel
+- *bilinear interpolation*: interpolate value from both x,y dimensions from 4 surrounding texels
+![Bilinear Interpolation](/assets/bilinear.jpg)
+  Image taken from *Real Time Rendering: Fourth Edition* (p179)
+- detail textures to represent fine surface details
+- bicubic: used 5x5 pixels with a weighting function for even greater accuracy
+
+##### Minification
+
 
 ## Chapter 19: Acceleration Algorithms
 
@@ -304,7 +343,7 @@ f_dir_t(l)=smoothstep(t)
   - estimation of radius of projected sphere on screen
     - object: (circle center point c, radius r)
     - viewer(position v, direction d)
-  $$p=\frac{nr}{d\cdot{(v-c)}}$
+  $$p=\frac{nr}{d\cdot{(v-c)}}$$
 
 #### Terrain Rendering
 - **Clipmap**: courser levels of geometry like mipmapping.
