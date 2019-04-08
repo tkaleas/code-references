@@ -109,48 +109,27 @@ Notes while reading [Real Time Rendering](http://www.realtimerendering.com/ )
 #### Translation
   
   
-```
-1 0 0 Tx
-0 1 0 Ty
-0 0 1 Tz
-0 0 0 1
-```
-<p align="center"><img src="https://latex.codecogs.com/gif.latex?&#x5C;begin{bmatrix}%201%20&amp;%200%20&amp;%200%20&amp;%20d&#x5C;&#x5C;0%20&amp;%201%20&amp;%200%20&amp;%20d&#x5C;&#x5C;0%20&amp;%200%20&amp;%201%20&amp;%20d&#x5C;&#x5C;0%20&amp;%200%20&amp;%20c%20&amp;%20d&#x5C;&#x5C;%20%20&#x5C;end{bmatrix}"/></p>  
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?T=&#x5C;begin{bmatrix}%201%20&amp;%200%20&amp;%200%20&amp;%20Tx&#x5C;&#x5C;0%20&amp;%201%20&amp;%200%20&amp;%20Ty&#x5C;&#x5C;0%20&amp;%200%20&amp;%201%20&amp;%20Yz&#x5C;&#x5C;0%20&amp;%200%20&amp;%200%20&amp;%201&#x5C;&#x5C;%20%20&#x5C;end{bmatrix}"/></p>  
   
   
 #### Rotation
   
   
-Rx(phi)
-```
-1 0 			0 			   	0
-0 cos(phi) -sin(phi) 	0
-0 sin(phi) cos(phi) 	0
-0 0 			0 				1
-```-
-Ry(phi)
-```
-cos(phi) 	0 		sin(phi) 	0
-0 				1 		-sin(phi) 	0
--sin(phi) 	0 		cos(phi) 	0
-0 				0 		0 				1
-```
-Rz(phi)
-```
-cos(phi) 	-sin(phi) 	0 			0
-sin(phi) 	cos(phi) 	0 			0
-0 				0 				1 			0
-0 				0 				0 			1
-```
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?R_x(&#x5C;phi)=&#x5C;begin{bmatrix}%201%20&amp;%200%20&amp;%200%20&amp;%200&#x5C;&#x5C;0%20&amp;%20cos(&#x5C;phi)%20&amp;%20-sin(&#x5C;phi)%20&amp;%200&#x5C;&#x5C;0%20&amp;%20sin(&#x5C;phi)%20&amp;%20cos(&#x5C;phi)&amp;%200&#x5C;&#x5C;0%20&amp;%200%20&amp;%200%20&amp;%201&#x5C;&#x5C;%20%20&#x5C;end{bmatrix}"/></p>  
+  
+  
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?R_y(&#x5C;phi)=&#x5C;begin{bmatrix}%20cos(&#x5C;phi)%20&amp;%200%20&amp;%20sin(&#x5C;phi)%20&amp;%200&#x5C;&#x5C;0%20&amp;%201%20&amp;%200%20&amp;%200&#x5C;&#x5C;-sin(&#x5C;phi)%20&amp;%200%20&amp;%20cos(&#x5C;phi)&amp;%200&#x5C;&#x5C;0%20&amp;%200%20&amp;%200%20&amp;%201&#x5C;&#x5C;%20%20&#x5C;end{bmatrix}"/></p>  
+  
+  
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?R_z(&#x5C;phi)=&#x5C;begin{bmatrix}%20cos(&#x5C;phi)%20&amp;%20sin(&#x5C;phi)%20&amp;%200%20&amp;%200&#x5C;&#x5C;sin(&#x5C;phi)%20&amp;%20cos(&#x5C;phi)%20&amp;%200%20&amp;%200&#x5C;&#x5C;0%20&amp;%200%20&amp;%200&amp;%200&#x5C;&#x5C;0%20&amp;%200%20&amp;%200%20&amp;%201&#x5C;&#x5C;%20%20&#x5C;end{bmatrix}"/></p>  
+  
   
 #### Scaling
   
-```
-Sx 0 0 0
-0 Sy 0 0
-0 0 Sz 0
-0 0 0   1
-```
+  
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?S=&#x5C;begin{bmatrix}%20S_x%20&amp;%200%20&amp;%200%20&amp;%200&#x5C;&#x5C;0%20&amp;%20S_y%20&amp;%200%20&amp;%200&#x5C;&#x5C;0%20&amp;%200%20&amp;%20S_z&amp;%200%20&#x5C;&#x5C;0%20&amp;%200%20&amp;%200%20&amp;%201%20%20&#x5C;&#x5C;%20%20&#x5C;end{bmatrix}"/></p>  
+  
+  
 #### Concatenation
   
 - multiply matrices together to concatenate transforms
@@ -181,6 +160,7 @@ r = 2(n dot l )n-l
 s = clamp01(100(r dot v)-97)
 c_shaded = s*c_highlight+(1-s)(t*c_warm+(1-t)*c_cool)
 ```
+  
 ### Light Sources
   
 - Directional Lights: no location, light direction remains constant
@@ -234,6 +214,122 @@ f_dir_t(l)=smoothstep(t)
 - sampling frequency has to be more than twice the maximum frequency of the signal to be sampled
 - **Nyquist rate** or **Nyquist limit** is the frequency, and its called *sampling theorem*
 - Box Filter: Nearest Neighbor
+	-box filter placed over each sample point, then scaled so that it coincides with the point.
+- Tent Filter: interpolation between samples, linear
+- Low Pass Filter: <img src="https://latex.codecogs.com/gif.latex?sin(2&#x5C;pi%20f)"/> where <img src="https://latex.codecogs.com/gif.latex?f"/> is frequency of the component
+  - Removes all frequences higher than a certain frequency of the filter, blurs
+  <p align="center"><img src="https://latex.codecogs.com/gif.latex?sinc(x)=&#x5C;frac{sin(&#x5C;pi%20x)}{&#x5C;pi%20x}"/></p>  
+  
+  - this gets us continuous signal back but we cannot use
+  - 
+#### Resampling
   
   
+- upsampling vs. downsampling
+- resample using the new function at continuous intervals
+- downsampling: trickier since resampling can lead to aliasing
+	- increase filter width to reduce higher frequency content
+    - akin to blurring then resampling at lower rez
+    - 
+#### Screen Based Antialiasing
+  
+ - general strategy of screen based anti aliasing is to use sampling pattern for pixel then weight and sum samples to produce pixel color.
+  <p align="center"><img src="https://latex.codecogs.com/gif.latex?p(x,y)=&#x5C;sum_{i=1}^{n}{w_i&#x5C;bm{c}(i,x,y)}"/></p>  
+  
+- n is the number of samples for the pixel
+- Super Sampling/Full Scene Antialiasing: render scene at higher resolution and filter neighbors to create an image.
+- MultiSampling Anti Aliasing (MSAA): compute shade once per pixel, then share result among the samples
+- TAA: temporal antialiasing, a class of tequniques using results from previous frames to improve image
+  - no additional samples needed
+  - reprojection: uses a velocity buffer to better correlate frames
+  - good use with deferred shading which is not compatible with MSAA
+- MSAA sampling patterns are hard-coded 
+  
+### Transparency Alpha and Compositing
+  
+- Screen Door Transparency: checkboard pattern on object (every other pixel is rendered)
+  - usually every other pixel is close enough that checker pattern not visible
+- Stochastic Transparncy: screen door masks with stochastic sampling
+- Alpha Blending: alpha is opacity, or coverage of fragment for sampling techniques
+#### Blending Order
+  
+- Over Operator: <img src="https://latex.codecogs.com/gif.latex?&#x5C;bm{c}_o=&#x5C;alpha_s&#x5C;bm{c}_s+1(1-&#x5C;alpha_s)&#x5C;bm{c}_d"/>
+- Additive Blending: <img src="https://latex.codecogs.com/gif.latex?&#x5C;bm{c}_o=&#x5C;alpha_s&#x5C;bm{c}_s+&#x5C;bm{c}_d"/>
+#### Premultiplied Alphas
+  
+- Premultiplied Alphas makes the compositing equation much more efficient
+  - over and additive blending easier, as all you need to do is add source color during blending.
+- Non-Premultiplied Alphas: separate storage of alpha value, must be careful with linear interpolation as black frindes can result.
+  
+  
+### Display Encoding
+  
+- Gamma Correction: raise to power 1/2.2
+- based on CRT monitor display functions, we want to cancel out the effect of this so apply inverse function to bring back to a normal range.
+  
+  
+## Chapter 6: Texturing
+  
+- texels: to differentiate from pixels on the screen
+- projector function: changes from (x,y,z) to (u,v) coordinates
+	- cylindrical, planar, unwrapped UV per vertex (mesh parameterization)
+	- cube map another form of directional coordinate space
+  
+## Chapter 19: Acceleration Algorithms
+  
+  
+### Level of Detail
+  
+- simpler versions of objects based on criteria to improve performance/rendering
+- reudction in vertex processing (and pixel shading costs)
+- Generation, Selection, Switching
+#### LOD Switching
+  
+- discrete: pop LOD's off and on
+- blend LODS: fade in LOD2 then fade out LOD1, render from transparent to opaque.
+  - short transition intervals
+- alpha LODS: very continuous, avoids popping
+  - gradually bring in LODs 0-1 alpha, if invisible do not render
+#### LOD Selection
+  
+- benefit function: pick appropriate LOD based function
+  - distance: range
+  - screen space coverage
+  - estimation of radius of projected sphere on screen
+    - object: (circle center point c, radius r)
+    - viewer(position v, direction d)
+  <img src="https://latex.codecogs.com/gif.latex?$p=&#x5C;frac{nr}{d&#x5C;cdot{(v-c)}}"/>
+  
+#### Terrain Rendering
+  
+- **Clipmap**: courser levels of geometry like mipmapping.
+  - smoothly interpolate at seams
+  - [1078],[82],[555]
+- Tiles: breakup heightfield into tiles at these multiple levels
+- **Chunked LOD**
+  - represent terrain using n levels of detail
+  - structure encoded in quad-tree and traversed at root for rendering
+  - render ONLY if screen space error is below threshold, otherwise visit children.
+    - results in better resolution near viewer
+    - w is width of screen, d is distance to camera from terrain tile, theta is horizontal field of view (radians), epsilon is geometric error
+  - <img src="https://latex.codecogs.com/gif.latex?s=&#x5C;frac{&#x5C;epsilon%20w}{2d&#x5C;tan{&#x5C;frac{&#x5C;theta}{2}}}"/>
+  - Hausdorff Distance used for geometric error [906,1605]
+  - morphing using higher LOD at boundaries between LODs
+  - crack repair:
+    - bridge gap between 2 tiles [324,670]
+    - vertex shader solution [1720]
+  - [299,244]
+  - 
+  
+##### Terrain References
+  
+[82] Terrain Rendering Using GPU-Based Geometry, *Gpu Gems 2*
+[555] Landscape Creation and Rendering in REDEngine 3
+[1078] Geometry Clipmaps: Terrain Rendering Using Nested Regular Grids
+[1605] SIGGRAPH REndering MAssive Virtual Worlds Course
+	-https://cesiumjs.org/hosted-apps/massiveworlds/
+[324] Binary Triangle Trees for Terrain Tile INdex Buffer Generation
+	-https://www.gamasutra.com/view/feature/130171/binary_triangle_trees_for_terrain_.php
+[670] Real Time Cloud Rendering
+[1720] Continuous Distance Dependant Level of Detail for Rendering Heightmaps
   

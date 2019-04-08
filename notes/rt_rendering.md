@@ -4,6 +4,7 @@ markdown:
   path: rt_rendering_output.md
   ignore_from_front_matter: true
   absolute_image_path: false
+
 export_on_save:
   markdown: true
 ---
@@ -283,4 +284,54 @@ f_dir_t(l)=smoothstep(t)
 - projector function: changes from (x,y,z) to (u,v) coordinates
 	- cylindrical, planar, unwrapped UV per vertex (mesh parameterization)
 	- cube map another form of directional coordinate space
-- 
+
+## Chapter 19: Acceleration Algorithms
+
+### Level of Detail
+- simpler versions of objects based on criteria to improve performance/rendering
+- reudction in vertex processing (and pixel shading costs)
+- Generation, Selection, Switching
+#### LOD Switching
+- discrete: pop LOD's off and on
+- blend LODS: fade in LOD2 then fade out LOD1, render from transparent to opaque.
+  - short transition intervals
+- alpha LODS: very continuous, avoids popping
+  - gradually bring in LODs 0-1 alpha, if invisible do not render
+#### LOD Selection
+- benefit function: pick appropriate LOD based function
+  - distance: range
+  - screen space coverage
+  - estimation of radius of projected sphere on screen
+    - object: (circle center point c, radius r)
+    - viewer(position v, direction d)
+  $$p=\frac{nr}{d\cdot{(v-c)}}$
+
+#### Terrain Rendering
+- **Clipmap**: courser levels of geometry like mipmapping.
+  - smoothly interpolate at seams
+  - [1078],[82],[555]
+- Tiles: breakup heightfield into tiles at these multiple levels
+- **Chunked LOD**
+  - represent terrain using n levels of detail
+  - structure encoded in quad-tree and traversed at root for rendering
+  - render ONLY if screen space error is below threshold, otherwise visit children.
+    - results in better resolution near viewer
+    - w is width of screen, d is distance to camera from terrain tile, theta is horizontal field of view (radians), epsilon is geometric error
+  - $s=\frac{\epsilon w}{2d\tan{\frac{\theta}{2}}}$
+  - Hausdorff Distance used for geometric error [906,1605]
+  - morphing using higher LOD at boundaries between LODs
+  - crack repair:
+    - bridge gap between 2 tiles [324,670]
+    - vertex shader solution [1720]
+    - [299,244]
+
+##### Terrain References
+- [82] Terrain Rendering Using GPU-Based Geometry, *Gpu Gems 2*
+- [555] Landscape Creation and Rendering in REDEngine 3
+- [1078] Geometry Clipmaps: Terrain Rendering Using Nested Regular Grids
+- [1605] SIGGRAPH REndering MAssive Virtual Worlds Course
+	-https://cesiumjs.org/hosted-apps/massiveworlds/
+- [324] Binary Triangle Trees for Terrain Tile INdex Buffer Generation
+	-https://www.gamasutra.com/view/feature/130171/binary_triangle_trees_for_terrain_.php
+- [670] Real Time Cloud Rendering
+- [1720] Continuous Distance Dependant Level of Detail for Rendering Heightmaps
