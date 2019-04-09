@@ -320,9 +320,54 @@ O --> V[Value Transform Function]
   Image taken from *Real Time Rendering: Fourth Edition* (p179)
 - detail textures to represent fine surface details
 - bicubic: used 5x5 pixels with a weighting function for even greater accuracy
-
 ##### Minification
 
+
+## Chapter 15: Non-Photorealistic Rendering
+- (NPR) - stylized rendering
+- hard shading: 2 tone approach, lighter tones in shadows with hard cut dot product values
+- posterization: continuous range of values and convert to just a few tones.
+### Outlines
+- *border edge:* not shared by 2 triangles
+- *crease:* shared by 2 triangles, angle between them is greater than some value
+- *material edge:* 2 triangles differ in materials
+- *contour edge:* 2 triangles face different directions compared to eye
+- *silhouette*: contour edge along the outline of the object, separate object from the background
+
+- normal contour edges: shade by using falloff between view direction and surface normal
+  
+-procedural geometry silhouttes: render front faces, then render backfaces at a larger offset so taht they are visible in black.
+
+- Raskar and Cohen [1460] "Image Precision Silhouette Edges"
+  - good for character outlining (make characters more apparent, probably what they use in League of Legends)
+
+**Image Processing:**
+  - render to separate buffers, run edge detection algorithms using deffered shading buffers
+  - sobel filter used in borderlands for edge detection:
+  - dilation/erosion operators to adjust size of the filter.
+**Geometric Edge Detection**
+  - to detect actual geometry for where the edges are, and recreate quads which represent the edges of the objects.
+  - render contours as actual curves or lines
+  - seems very difficult and computationally expensive to do this version.
+
+### Stroke Surface Stylizing
+- texture applied to screen space coordinates for "darker" areas
+  - shower door effect: objects look like they are swimming through the texture
+- apply textures directly to surface to solve:
+  - however you want the brush strokes to look uniform depending on distance.
+    - tonal art maps: apply different density textures with mip-maps
+      - strokes drawn at all different mipmap levels to be uniform.
+  - volume texture for color
+
+### Line Rendering
+- triangle edges:
+  - best method seems to be pixel shader using triangles barycentric coordinates
+  - adjustable edge thickness
+- vector textures: [495] Adaptively Sampled Distance Fields that can be used for clear vector textures. 
+  - [Improved Alpha-Tested
+Magnification for Vector
+Textures and Special Effects](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.170.9418&rep=rep1&type=pdf)
+- SIGGRAPH 2010: "Stylized Rendering in Games"
 
 ## Chapter 19: Acceleration Algorithms
 
