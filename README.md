@@ -73,7 +73,7 @@ Breakdowns
 - [UE4 Widget Interaction](https://docs.unrealengine.com/latest/INT/Engine/UMG/HowTo/InWorldWidgetInteraction/index.html)
 - [PopCorn FX Plugin](https://github.com/PopcornFX/UE4PopcornFXPlugin)
 - [UE4 Tutorial Playlist](https://www.youtube.com/playlist?list=PLZlv_N0_O1gaCL2XjKluO7N2Pmmw9pvhE)
-
+- [UE4 Custom Shading Model](http://blog.felixkate.net/2016/05/22/adding-a-custom-shading-model-1/)
 ##### UE4 Continuous Integration
 - [UE4 Small Team](http://hiderek.com/post/110141158112/unreal-engine-4-and-a-small-team-day-134)
 - [UE4 Build Scripts](https://github.com/getsetgames/UE4-Build-Scripts)
