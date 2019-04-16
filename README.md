@@ -53,7 +53,11 @@ Breakdowns
 - https://thebookofshaders.com/13/
 - https://iquilezles.org/index.html
 - [Real Time Rendering](http://www.realtimerendering.com/blog/)
-
+- 
+##### NPR - Toon
+- [Toon Shading Styles](https://blog.felixkate.net/2017/01/19/toon-shading/)
+- [UE4 Toon Shading](https://forums.unrealengine.com/development-discussion/rendering/1537277-toon-shading-models-stylized-rendering-experiments)
+- 
 #### UX and Interactivity (Mostly VR)
 - https://www.uxofvr.com/
 - https://www.youtube.com/channel/UChvlNUgZKmEd-Gul_Tdv8Uw
@@ -74,6 +78,8 @@ Breakdowns
 - [PopCorn FX Plugin](https://github.com/PopcornFX/UE4PopcornFXPlugin)
 - [UE4 Tutorial Playlist](https://www.youtube.com/playlist?list=PLZlv_N0_O1gaCL2XjKluO7N2Pmmw9pvhE)
 - [UE4 Custom Shading Model](http://blog.felixkate.net/2016/05/22/adding-a-custom-shading-model-1/)
+- [UE4 More Custom Shading Model Guide](https://medium.com/@lordned/unreal-engine-4-rendering-overview-part-1-c47f2da65346)
+  
 ##### UE4 Continuous Integration
 - [UE4 Small Team](http://hiderek.com/post/110141158112/unreal-engine-4-and-a-small-team-day-134)
 - [UE4 Build Scripts](https://github.com/getsetgames/UE4-Build-Scripts)
