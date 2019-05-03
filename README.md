@@ -50,14 +50,15 @@ Breakdowns
 #### Code and Shaders
 - [KodeLife](https://hexler.net/software/kodelife/)]
 - https://learnopengl.com/
-- https://thebookofshaders.com/13/
-- https://iquilezles.org/index.html
+- [Book of Shaders](https://thebookofshaders.com/13/)
+- [IQ Articles](https://iquilezles.org/index.html)
 - [Real Time Rendering](http://www.realtimerendering.com/blog/)
-- 
+- [Faster Than Life Vulkan Tutorial](https://www.fasterthan.life/blog/2017/7/11/i-am-graphics-and-so-can-you-part-1)
+- [THE Vulkan Tutorial](https://vulkan-tutorial.com/#page_Tutorial_structure)
 ##### NPR - Toon
 - [Toon Shading Styles](https://blog.felixkate.net/2017/01/19/toon-shading/)
 - [UE4 Toon Shading](https://forums.unrealengine.com/development-discussion/rendering/1537277-toon-shading-models-stylized-rendering-experiments)
-- 
+
 #### UX and Interactivity (Mostly VR)
 - https://www.uxofvr.com/
 - https://www.youtube.com/channel/UChvlNUgZKmEd-Gul_Tdv8Uw
