@@ -43,6 +43,7 @@ Hopefully this reference list will be useful to someone else too.
 
 ##### Blender
 - [Blender Guru](https://www.youtube.com/channel/UCOKHwx1VCdgnxwbjyb9Iu1g)
+- [Blender Artists](https://blenderartists.org/)
 ### Film
 Art of VFX
 Breakdowns
