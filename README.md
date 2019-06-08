@@ -39,7 +39,7 @@ Hopefully this reference list will be useful to someone else too.
 - [Procedural Art - Anastasia Opara](https://www.anastasiaopara.com/blog)
 - [qLib A procedural asset library for SideFX Houdini](http://qlab.github.io/qLib/)
 - [Nature Design with Houdini](https://www.youtube.com/playlist?list=PLzRzqTjuGIDgnYunqLTthY9RdVMTs6BzN)
-  - [Nature Design With Houdini Github](https://github.com/jhorikawa/nature-design-with-houdini-book)
+- [Nature Design With Houdini Github](https://github.com/jhorikawa/nature-design-with-houdini-book)
 
 ##### Blender
 - [Blender Guru](https://www.youtube.com/channel/UCOKHwx1VCdgnxwbjyb9Iu1g)
@@ -130,12 +130,12 @@ Breakdowns
 #### C++
 #### Python
 - [Free Python Books](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#python) : A bunch of free python books (and other programming languages/agnostic as well)
-- https://learnxinyminutes.com/docs/python/
-- https://docs.python.org/2.7/tutorial/index.html
-- https://docs.python.org/3/library/
-- https://www.learnpython.org/
-- https://en.wikibooks.org/wiki/Python_Programming/Input_and_Output
-- http://blog.endpoint.com/2015/01/getting-realtime-output-using-python.html
+- [Learn X in Y Minutes] (https://learnxinyminutes.com/docs/python/)
+- [Python Tutorial] (https://docs.python.org/2.7/tutorial/index.html)
+- [Python Docs] (https://docs.python.org/3/library/)
+- [Learn Python] (https://www.learnpython.org/)
+- [Python IO] (https://en.wikibooks.org/wiki/Python_Programming/Input_and_Output)
+- [Python Real Time Output] http://blog.endpoint.com/2015/01/getting-realtime-output-using-python.html)
 #### C#
 - https://csharp.net-tutorials.com/
 #### Rust
