@@ -6,7 +6,7 @@ Personal notes while reading Jason Gregory's Game Engine Architecture.
 -  2 parts: Tool Suite and Runtime Component
 - Build in layers to avoid circular dependencies where lower level dependent on higher level
 
-### THird Party Sdks
+### Third Party Sdks
 - Middleware and other software in use like OpenGL, Havok, Boost, etc.
 
 ### Data Structures + Algorithms

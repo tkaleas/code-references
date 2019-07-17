@@ -1,18 +1,18 @@
   
   
-# Real Time Rendering Notes
+#  Real Time Rendering Notes
   
   
 Notes while reading [Real Time Rendering](http://www.realtimerendering.com/ )
   
-## Chapter 2: Graphics Pipeline
+##  Chapter 2: Graphics Pipeline
   
   
 - Pipeline: executes in parallel with each stage dependant on the previous stage.
 - Bottleneck : speed determined speed of the entire pipeline, starved in stage waits for time for this stage to be done. 
 - Rendering Speed: FPS or Hertz
   
-### Stages
+###  Stages
   
   
 - Application Stage: Collision Detection, animation, physics, etc.
@@ -20,7 +20,7 @@ Notes while reading [Real Time Rendering](http://www.realtimerendering.com/ )
 -  Rasterization Stage: takes in a triangle, exports pixels related to this triangle.
 - Pixel Processing: per pixel operations 
   
-#### Application Stage
+####  Application Stage
   
   
 -  Full User Control in Code
@@ -28,12 +28,12 @@ Notes while reading [Real Time Rendering](http://www.realtimerendering.com/ )
 - Rendering Primitives: 
 - Collision Detection, culling acceleration
   
-#### Geometry Processing
+####  Geometry Processing
   
   
 - Vertex Shading -> Projection -> Clipping -> Screen Mapping
   
-#### Vertex Shading
+####  Vertex Shading
   
   
 - Transforms to correct Space or Coordinate System
@@ -53,7 +53,7 @@ Notes while reading [Real Time Rendering](http://www.realtimerendering.com/ )
 - Perspectice view volume is a frustum.
 - 4x4 matrices to both
   
-#### Optional Vertex Processing
+####  Optional Vertex Processing
   
   
 - Tesselation: series of stages to convert vertices into larger sets of vertices with new triangles based on view distances.
@@ -61,40 +61,40 @@ Notes while reading [Real Time Rendering](http://www.realtimerendering.com/ )
 	-Particle represented by single vertex, converted into square that faces viewer.
 - Stream Output: GPU as a geometry engine, output these back to memory for use by CPU or GPU.
   
-#### Clipping
+####  Clipping
   
   
 - moving vertices to be inside the view volume or making new verts to fit this.
   
-#### Screen Mapping
+####  Screen Mapping
   
 - moving from clip coordinates to coordinates of the actual screen.
   
-#### Pixel Shading
+####  Pixel Shading
   
   
 - texturing occurs at this stage
   
-#### Merging
+####  Merging
   
   
 - z buffer culling, alpha channels to blend
 - stencil buffer used or can be used here
 - post process shaders
   
-#### Resources
+####  Resources
   
   
 - Blinn' *A Trip Down the Graphics Pipeline*
   
-### Transforms Chapter 4
+###  Transforms Chapter 4
   
   
 - Linear Transform: perserves vector addition, scalar multiplications, parallel lines
 - Affine Transform: linear transform and translation, 4x4 matrix
 	-use homogenous coordinates for positions or directions (4 sized vectors)
   
-#### Basic Transforms
+####  Basic Transforms
   
   
 - Translation
@@ -106,13 +106,13 @@ Notes while reading [Real Time Rendering](http://www.realtimerendering.com/ )
 - Perspectice Projection
 - Slerp Transform
   
-#### Translation
+####  Translation
   
   
 <p align="center"><img src="https://latex.codecogs.com/gif.latex?T=&#x5C;begin{bmatrix}%201%20&amp;%200%20&amp;%200%20&amp;%20Tx&#x5C;&#x5C;0%20&amp;%201%20&amp;%200%20&amp;%20Ty&#x5C;&#x5C;0%20&amp;%200%20&amp;%201%20&amp;%20Yz&#x5C;&#x5C;0%20&amp;%200%20&amp;%200%20&amp;%201&#x5C;&#x5C;%20%20&#x5C;end{bmatrix}"/></p>  
   
   
-#### Rotation
+####  Rotation
   
   
 <p align="center"><img src="https://latex.codecogs.com/gif.latex?R_x(&#x5C;phi)=&#x5C;begin{bmatrix}%201%20&amp;%200%20&amp;%200%20&amp;%200&#x5C;&#x5C;0%20&amp;%20cos(&#x5C;phi)%20&amp;%20-sin(&#x5C;phi)%20&amp;%200&#x5C;&#x5C;0%20&amp;%20sin(&#x5C;phi)%20&amp;%20cos(&#x5C;phi)&amp;%200&#x5C;&#x5C;0%20&amp;%200%20&amp;%200%20&amp;%201&#x5C;&#x5C;%20%20&#x5C;end{bmatrix}"/></p>  
@@ -124,23 +124,23 @@ Notes while reading [Real Time Rendering](http://www.realtimerendering.com/ )
 <p align="center"><img src="https://latex.codecogs.com/gif.latex?R_z(&#x5C;phi)=&#x5C;begin{bmatrix}%20cos(&#x5C;phi)%20&amp;%20sin(&#x5C;phi)%20&amp;%200%20&amp;%200&#x5C;&#x5C;sin(&#x5C;phi)%20&amp;%20cos(&#x5C;phi)%20&amp;%200%20&amp;%200&#x5C;&#x5C;0%20&amp;%200%20&amp;%200&amp;%200&#x5C;&#x5C;0%20&amp;%200%20&amp;%200%20&amp;%201&#x5C;&#x5C;%20%20&#x5C;end{bmatrix}"/></p>  
   
   
-#### Scaling
+####  Scaling
   
   
 <p align="center"><img src="https://latex.codecogs.com/gif.latex?S=&#x5C;begin{bmatrix}%20S_x%20&amp;%200%20&amp;%200%20&amp;%200&#x5C;&#x5C;0%20&amp;%20S_y%20&amp;%200%20&amp;%200&#x5C;&#x5C;0%20&amp;%200%20&amp;%20S_z&amp;%200%20&#x5C;&#x5C;0%20&amp;%200%20&amp;%200%20&amp;%201%20%20&#x5C;&#x5C;%20%20&#x5C;end{bmatrix}"/></p>  
   
   
-#### Concatenation
+####  Concatenation
   
 - multiply matrices together to concatenate transforms
 - Order is TRSp = T(R(Sp)) where T R S are matrices, and p is a point
 - Called rigid body transforms when they are only translations and rotations
   
   
-#### Projections
+####  Projections
   
 - perspective affects w coordinate, ortho does not
-##### Orthographic
+#####  Orthographic
   
 - paralel lines remain parallel after projections
 - axis aligned bound box is a common matrix
@@ -148,7 +148,7 @@ Notes while reading [Real Time Rendering](http://www.realtimerendering.com/ )
 - essential scalling for Field of View, translation to move camera to the origin.
   
   
-## Chapter 5: Shading
+##  Chapter 5: Shading
   
 - gooch shading model: 
 ```
@@ -161,7 +161,7 @@ s = clamp01(100(r dot v)-97)
 c_shaded = s*c_highlight+(1-s)(t*c_warm+(1-t)*c_cool)
 ```
   
-### Light Sources
+###  Light Sources
   
 - Directional Lights: no location, light direction remains constant
 - Punctual Lights: location, emanates out radially.
@@ -181,12 +181,12 @@ f_dist_f(l)=t^2
 f_dir_t(l)=smoothstep(t)
 ```
   
-### Implementions
+###  Implementions
   
 - most shading performed per pixel, not per vertex unless perfromance needed
 - interpolation errors across verts
 - normalizing vectors: normalizing vectors BEFORE interpolation can lead to incorrect results (interpolate first then normalize)
-### Material Systems
+###  Material Systems
   
 - artist facing abstraction of the visual appearance of a surface
 - material is not a surface
@@ -206,7 +206,7 @@ f_dir_t(l)=smoothstep(t)
 	- desgrined shader pipeline implementations
 - shaders often written in custom language dialect: Destiny, UE4, Unity
   
-### Aliasing and Antialiasing
+###  Aliasing and Antialiasing
   
 - rendering is a sampling task
 - goal of sampling to represent a continuous signal digitally at discrete intervals
@@ -222,7 +222,7 @@ f_dir_t(l)=smoothstep(t)
   
   - this gets us continuous signal back but we cannot use
   - 
-#### Resampling
+####  Resampling
   
   
 - upsampling vs. downsampling
@@ -231,7 +231,7 @@ f_dir_t(l)=smoothstep(t)
 	- increase filter width to reduce higher frequency content
     - akin to blurring then resampling at lower rez
     - 
-#### Screen Based Antialiasing
+####  Screen Based Antialiasing 
   
  - general strategy of screen based anti aliasing is to use sampling pattern for pixel then weight and sum samples to produce pixel color.
   <p align="center"><img src="https://latex.codecogs.com/gif.latex?p(x,y)=&#x5C;sum_{i=1}^{n}{w_i&#x5C;bm{c}(i,x,y)}"/></p>  
@@ -245,54 +245,146 @@ f_dir_t(l)=smoothstep(t)
   - good use with deferred shading which is not compatible with MSAA
 - MSAA sampling patterns are hard-coded 
   
-### Transparency Alpha and Compositing
+###  Transparency Alpha and Compositing
   
 - Screen Door Transparency: checkboard pattern on object (every other pixel is rendered)
   - usually every other pixel is close enough that checker pattern not visible
 - Stochastic Transparncy: screen door masks with stochastic sampling
 - Alpha Blending: alpha is opacity, or coverage of fragment for sampling techniques
-#### Blending Order
+####  Blending Order
   
 - Over Operator: <img src="https://latex.codecogs.com/gif.latex?&#x5C;bm{c}_o=&#x5C;alpha_s&#x5C;bm{c}_s+1(1-&#x5C;alpha_s)&#x5C;bm{c}_d"/>
 - Additive Blending: <img src="https://latex.codecogs.com/gif.latex?&#x5C;bm{c}_o=&#x5C;alpha_s&#x5C;bm{c}_s+&#x5C;bm{c}_d"/>
-#### Premultiplied Alphas
+####  Premultiplied Alphas
   
 - Premultiplied Alphas makes the compositing equation much more efficient
   - over and additive blending easier, as all you need to do is add source color during blending.
 - Non-Premultiplied Alphas: separate storage of alpha value, must be careful with linear interpolation as black frindes can result.
   
   
-### Display Encoding
+###  Display Encoding
   
 - Gamma Correction: raise to power 1/2.2
 - based on CRT monitor display functions, we want to cancel out the effect of this so apply inverse function to bring back to a normal range.
   
+##  Chapter 6: Texturing
   
-## Chapter 6: Texturing
+###  Texturing Pipeline
   
 - texels: to differentiate from pixels on the screen
 - projector function: changes from (x,y,z) to (u,v) coordinates
 	- cylindrical, planar, unwrapped UV per vertex (mesh parameterization)
 	- cube map another form of directional coordinate space
   
+```mermaid
+graph LR
+P[Projector Function] -->C[Corresponder Function];
+C --> O[Obtain Value];
+O --> V[Value Transform Function]
+```
+  
+####  Projection Function
+  
+- move from 3 to 2 dimensional space, <img src="https://latex.codecogs.com/gif.latex?(u,v)"/> coordinates.
+  
+####  Corresponder Function
+  
+- convert texture coordinates to texture space location.
+- can also be matrix transform applied to vertex or pixel shader
+  - transform texture before projecting on surface
+- Wrapping Modes: what happens to texture outside of 0-1 bounds
+  - wrap,repeat,tile
+  - mirror
+  - clamp
+  - border (clamp to border)
+  
+####  Image Texturing
+  
+- texutre coordinates on pixel to texel coordinates on texture
+- where is the center of the pixel? (0,0) or (0.5,.0)?
+  - truncate (floor) or round up/down to get correct coordinate
+- **Dependant Texture Read**: when texture read value is dependant on result of previous texture value, ie shanding shading normal -> changes cube map texture coordinates
+  - can potentially impact performance
+- Power Of Two Textures:  <img src="https://latex.codecogs.com/gif.latex?2^m&#x5C;times2^n"/> m and n not negative integers
+#####  Magnification
+  
+- when textures are viewed up closer than texture size per pixel.
+- *nearest neighbor*: pixelation, value of nearest texel
+- *bilinear interpolation*: interpolate value from both x,y dimensions from 4 surrounding texels
+![Bilinear Interpolation](../assets/bilinear.jpg )
+  Image taken from *Real Time Rendering: Fourth Edition* (p179)
+- detail textures to represent fine surface details
+- bicubic: used 5x5 pixels with a weighting function for even greater accuracy
+#####  Minification
   
   
-## Chapter 19: Acceleration Algorithms
+  
+##  Chapter 15: Non-Photorealistic Rendering
+  
+- (NPR) - stylized rendering
+- hard shading: 2 tone approach, lighter tones in shadows with hard cut dot product values
+- posterization: continuous range of values and convert to just a few tones.
+###  Outlines
+  
+- *border edge:* not shared by 2 triangles
+- *crease:* shared by 2 triangles, angle between them is greater than some value
+- *material edge:* 2 triangles differ in materials
+- *contour edge:* 2 triangles face different directions compared to eye
+- *silhouette*: contour edge along the outline of the object, separate object from the background
+  
+- normal contour edges: shade by using falloff between view direction and surface normal
+  
+-procedural geometry silhouttes: render front faces, then render backfaces at a larger offset so taht they are visible in black.
+  
+- Raskar and Cohen [1460] "Image Precision Silhouette Edges"
+  - good for character outlining (make characters more apparent, probably what they use in League of Legends)
+  
+**Image Processing:**
+  - render to separate buffers, run edge detection algorithms using deffered shading buffers
+  - sobel filter used in borderlands for edge detection:
+  - dilation/erosion operators to adjust size of the filter.
+**Geometric Edge Detection**
+  - to detect actual geometry for where the edges are, and recreate quads which represent the edges of the objects.
+  - render contours as actual curves or lines
+  - seems very difficult and computationally expensive to do this version.
+  
+###  Stroke Surface Stylizing
+  
+- texture applied to screen space coordinates for "darker" areas
+  - shower door effect: objects look like they are swimming through the texture
+- apply textures directly to surface to solve:
+  - however you want the brush strokes to look uniform depending on distance.
+    - tonal art maps: apply different density textures with mip-maps
+      - strokes drawn at all different mipmap levels to be uniform.
+  - volume texture for color
+  
+###  Line Rendering
+  
+- triangle edges:
+  - best method seems to be pixel shader using triangles barycentric coordinates
+  - adjustable edge thickness
+- vector textures: [495] Adaptively Sampled Distance Fields that can be used for clear vector textures. 
+  - [Improved Alpha-Tested
+Magnification for Vector
+Textures and Special Effects](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.170.9418&rep=rep1&type=pdf)
+- SIGGRAPH 2010: "Stylized Rendering in Games"
+  
+##  Chapter 19: Acceleration Algorithms
   
   
-### Level of Detail
+###  Level of Detail
   
 - simpler versions of objects based on criteria to improve performance/rendering
 - reudction in vertex processing (and pixel shading costs)
 - Generation, Selection, Switching
-#### LOD Switching
+####  LOD Switching
   
 - discrete: pop LOD's off and on
 - blend LODS: fade in LOD2 then fade out LOD1, render from transparent to opaque.
   - short transition intervals
 - alpha LODS: very continuous, avoids popping
   - gradually bring in LODs 0-1 alpha, if invisible do not render
-#### LOD Selection
+####  LOD Selection
   
 - benefit function: pick appropriate LOD based function
   - distance: range
@@ -300,9 +392,10 @@ f_dir_t(l)=smoothstep(t)
   - estimation of radius of projected sphere on screen
     - object: (circle center point c, radius r)
     - viewer(position v, direction d)
-  <img src="https://latex.codecogs.com/gif.latex?$p=&#x5C;frac{nr}{d&#x5C;cdot{(v-c)}}"/>^
+  <p align="center"><img src="https://latex.codecogs.com/gif.latex?p=&#x5C;frac{nr}{d&#x5C;cdot{(v-c)}}"/></p>  
   
-#### Terrain Rendering
+  
+####  Terrain Rendering
   
 - **Clipmap**: courser levels of geometry like mipmapping.
   - smoothly interpolate at seams
@@ -322,7 +415,7 @@ f_dir_t(l)=smoothstep(t)
     - vertex shader solution [1720]
     - [299,244]
   
-##### Terrain References
+#####  Terrain References
   
 - [82] Terrain Rendering Using GPU-Based Geometry, *Gpu Gems 2*
 - [555] Landscape Creation and Rendering in REDEngine 3

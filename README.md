@@ -4,7 +4,7 @@ I recently went searching for some old reference cheatsheets that used to exist 
 
 Having realized I should be keeping most of my personal references in a standard place,  I've decided it would be beneficial to just keep everything in a Github repo that I will try to periodically update. 
 
-As a lot of these technologies are constantly changing, hopefully a lot of content here will continue 
+As a lot of these technologies are constantly changing, hopefully a lot of content here will continue to be updated to reflect the latest useful resources for graphics. 
 
 Hopefully this reference list will be useful to someone else too.
 
@@ -14,7 +14,7 @@ Hopefully this reference list will be useful to someone else too.
 ## Book Notes
 ### [Game Engine Architecture](notes/game_engine_arch.md)
 ### [Real Time Rendering](notes/rt_rendering.md)
-
+### [3D Math Primer](notes/3d_math_primer.md)
 ---
 ## Graphics
 ### Resources
@@ -44,6 +44,7 @@ Hopefully this reference list will be useful to someone else too.
 ##### Blender
 - [Blender Guru](https://www.youtube.com/channel/UCOKHwx1VCdgnxwbjyb9Iu1g)
 - [Blender Artists](https://blenderartists.org/)
+
 ### Film
 Art of VFX
 Breakdowns
