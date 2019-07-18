@@ -40,6 +40,7 @@ Hopefully this reference list will be useful to someone else too.
 - [qLib A procedural asset library for SideFX Houdini](http://qlab.github.io/qLib/)
 - [Nature Design with Houdini](https://www.youtube.com/playlist?list=PLzRzqTjuGIDgnYunqLTthY9RdVMTs6BzN)
 - [Nature Design With Houdini Github](https://github.com/jhorikawa/nature-design-with-houdini-book)
+- [Rohan Dalvi Houdini+Redshift](https://www.rohandalvi.net)
 
 ##### Blender
 - [Blender Guru](https://www.youtube.com/channel/UCOKHwx1VCdgnxwbjyb9Iu1g)
