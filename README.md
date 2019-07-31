@@ -15,6 +15,7 @@ Hopefully this reference list will be useful to someone else too.
 ### [Game Engine Architecture](notes/game_engine_arch.md)
 ### [Real Time Rendering](notes/rt_rendering.md)
 ### [3D Math Primer](notes/3d_math_primer.md)
+### [Redshift](notes/redshift.md)
 ---
 ## Graphics
 ### Resources
@@ -40,7 +41,7 @@ Hopefully this reference list will be useful to someone else too.
 - [qLib A procedural asset library for SideFX Houdini](http://qlab.github.io/qLib/)
 - [Nature Design with Houdini](https://www.youtube.com/playlist?list=PLzRzqTjuGIDgnYunqLTthY9RdVMTs6BzN)
 - [Nature Design With Houdini Github](https://github.com/jhorikawa/nature-design-with-houdini-book)
-- [Rohan Dalvi Houdini+Redshift](https://www.rohandalvi.net)
+- [Rohan Dalvi Houdini + Redshift](https://www.rohandalvi.net)
 
 ##### Blender
 - [Blender Guru](https://www.youtube.com/channel/UCOKHwx1VCdgnxwbjyb9Iu1g)
@@ -52,7 +53,7 @@ Breakdowns
 ### Real-Time (Games/VR)
 #### Code and Shaders
 - [KodeLife](https://hexler.net/software/kodelife/)]
-- https://learnopengl.com/
+- [LearnOpenGL](https://learnopengl.com/)
 - [Book of Shaders](https://thebookofshaders.com/13/)
 - [IQ Articles](https://iquilezles.org/index.html)
 - [Real Time Rendering](http://www.realtimerendering.com/blog/)
@@ -66,17 +67,16 @@ Breakdowns
 - https://www.uxofvr.com/
 - https://www.youtube.com/channel/UChvlNUgZKmEd-Gul_Tdv8Uw
 
-
 ## Game Development
-
 [PolyCount Wiki](http://wiki.polycount.com/wiki/Polycount)
+
 #### Game Engines
 
 ##### Unreal Engine 4
-- https://docs.unrealengine.com/latest/INT/Programming/Rendering/ShaderDevelopment/index.html
+- [UE4 Shader Development](https://docs.unrealengine.com/latest/INT/Programming/Rendering/ShaderDevelopment/index.html)
 - [UDN - Unreal Developer Network](https://udn.unrealengine.com/)
 - [UE4 Issues](https://issues.unrealengine.com/)
-- https://forums.unrealengine.com/showthread.php?3822-UE-4-and-Oculus-Rift-Framerate-Optimization
+- [UE4 Rift Optimization](https://forums.unrealengine.com/showthread.php?3822-UE-4-and-Oculus-Rift-Framerate-Optimization)
 - [Materials](https://wiki.unrealengine.com/Category:Material)
 - [Cascade Guide](https://wiki.unrealengine.com/Category:Particle)
 - [UE4 Logging](https://wiki.unrealengine.com/Logs,_Printing_Messages_To_Yourself_During_Runtime)
@@ -98,7 +98,6 @@ Breakdowns
 
 #### Real Time VFX
 - [RealTimeVFX.com](https://realtimevfx.com/)
-- https://80.lv/articles/real-time-vfx-artists-you-should-follow/
 - [Popcorn FX](http://wiki.popcornfx.com/index.php/Particle_tutorials#Editor_tutorials)
 - [Klemen Lozar's Motion Vectors Guide](http://www.klemenlozar.com/frame-blending-with-motion-vectors/)
 - [Fallout 4 Mushroom Breakdown](https://simonschreibt.de/gat/fallout-4-the-mushroom-case/)
@@ -116,10 +115,13 @@ Breakdowns
 #### Guides
 - https://github.com/jwasham/coding-interview-university
 - https://github.com/andreis/interview
+- [Problem Solving with Python](https://runestone.academy/runestone/books/published/pythonds/index.html)
 #### Practice
-- [Nerd Paradise]https://nerdparadise.com/
+- [The Coding Interview](https://github.com/mre/the-coding-interview)
+- [Nerd Paradise](https://nerdparadise.com/)
 - [TopCoder](https://www.topcoder.com/)
 - [LeetCode](https://leetcode.com/)
+- [Project Eueler](https://projecteuler.net/) 
 - [Shader Toy](https://www.shadertoy.com/)
 - [Book of Shaders](http://editor.thebookofshaders.com/)
 
@@ -132,24 +134,24 @@ Breakdowns
 #### C++
 #### Python
 - [Free Python Books](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#python) : A bunch of free python books (and other programming languages/agnostic as well)
-- [Learn X in Y Minutes] (https://learnxinyminutes.com/docs/python/)
-- [Python Tutorial] (https://docs.python.org/2.7/tutorial/index.html)
-- [Python Docs] (https://docs.python.org/3/library/)
-- [Learn Python] (https://www.learnpython.org/)
-- [Python IO] (https://en.wikibooks.org/wiki/Python_Programming/Input_and_Output)
-- [Python Real Time Output] http://blog.endpoint.com/2015/01/getting-realtime-output-using-python.html)
+- [Learn X in Y Minutes](https://learnxinyminutes.com/docs/python/)
+- [Python Tutorial](https://docs.python.org/2.7/tutorial/index.html)
+- [Python Docs](https://docs.python.org/3/library/)
+- [Learn Python](https://www.learnpython.org/)
+- [Python IO](https://en.wikibooks.org/wiki/Python_Programming/Input_and_Output)
+- [Python Real Time Output](http://blog.endpoint.com/2015/01/getting-realtime-output-using-python.html)
 #### C#
-- https://csharp.net-tutorials.com/
+- [C# Tutorial](https://csharp.net-tutorials.com/)
 #### Rust
-- https://doc.rust-lang.org/book/2018-edition/index.html
+- [Rust Docs](https://doc.rust-lang.org/book/2018-edition/index.html)
 #### PowerShell
-- https://developer.rackspace.com/blog/powershell-101-from-a-linux-guy/
+- [Power Shell from a Linux Guy](https://developer.rackspace.com/blog/powershell-101-from-a-linux-guy/)
 ### [Mobile and Web](mobile_web.md)
 
 ---
 ## Misceleanous
 ### Github
-[GIthub Markdown Guide](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+- [Github Markdown Guide](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 ### Machine Learning
 - [Deep Learning for Computer Graphics](http://geometry.cs.ucl.ac.uk/dl4g/)
 - [Andrew Ng's Machine Learning - Coursera](https://www.coursera.org/learn/machine-learning)
