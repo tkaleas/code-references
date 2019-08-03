@@ -4,7 +4,7 @@
 - [X] Udacity Python Course
   - [X] Move Exercise Code to Python Sandbox Editor
 - [-] 1 Data Structures and Algorithms Made Easy
-  - [-] Create Python Data Structures and Unit Tests
+  - [-] Create Python Data Structures and Unit Tests (swap between these where appropriate)
   - [-] Create C++ Data Structures and Unit Tests
 - [-] 2 Programming Interviews Exposed
 - [] 3 Cracking the Coding Interview

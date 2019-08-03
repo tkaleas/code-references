@@ -16,6 +16,7 @@ Personal notes while reading Jason Gregory's Game Engine Architecture.
 ### Graphics
 -  OpenGL: widley used, open source
 - DirectX: microsoft, most games
+
 ### Collision/Physics
 - Havok, PhysX, ODE
 
