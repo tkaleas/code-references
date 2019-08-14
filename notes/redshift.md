@@ -2,8 +2,11 @@
 
 Notes on rendering using Redshift with Houdini.
 
-## Notes
+## Links
+- [Redshift Docs]()
+- [Redshift Forums]()
 
+## Notes
 - `RS Material` is the main PBR material to use.
 - Material Assignments at SOP Level
 - Redshift `OBJParam` and `CamParams` in Redshift Shelf:
@@ -12,6 +15,7 @@ Notes on rendering using Redshift with Houdini.
     - CameraParams: DOF, Exposure Settings
     - Lights: can adjust affect specular/diffuse under RSLight->Ray Contribution->Affect Diffuse/Specular
         -also adjust specular/diffuse scale for contribution.
+
 ## Depth of Field
 - Custom Bokeh (hexagons, triangles, custom size circles, etc.):
     -Camera->Redshift Camera->DOF->Use Bokeh Image
@@ -52,17 +56,17 @@ Notes on rendering using Redshift with Houdini.
     - RS Normal Map
 
 ### Specular Models
-    - [Refractive Indices](https://refractiveindex.info/?shelf=3d&book=liquids&page=water)
-    - Fresnel Type: different models for reflections (ig GGX)
-    - Sub-Surface Scattering:
-        - good for more complex plastics -> color transmittance for objects.
-    -Metals:
-        -IOR(Advanced): IOR for each channel
-        -Absorption:
-    -Metalness Workflow:
-        -Diffuse: color for diffuse, absorption/reflection of just color
-        -Reflection: metalness and reflection map values
-            -Reflectivity: how much, Metalness: specular/reflection
+-[Refractive Indices](https://refractiveindex.info/?shelf=3d&book=liquids&page=water)
+- Fresnel Type: different models for reflections (ig GGX)
+- Sub-Surface Scattering:
+    - good for more complex plastics -> color transmittance for objects.
+-Metals:
+    -IOR(Advanced): IOR for each channel
+    -Absorption:
+-Metalness Workflow:
+    -Diffuse: color for diffuse, absorption/reflection of just color
+    -Reflection: metalness and reflection map values
+        -Reflectivity: how much, Metalness: specular/reflection
 
 ## Particles
 - Cannot Render Particles Directly
