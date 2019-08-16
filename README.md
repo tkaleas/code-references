@@ -1,8 +1,8 @@
 # Code References
 
-I recently went searching for some old reference cheatsheets that used to exist for Houdini and found that I was completely unable to find them in my bookmarks tab, files, or wherever I was actually searching for it.
+I recently went searching for some old reference cheat sheets that used to exist for Houdini and found that I was completely unable to find them in my bookmarks tab, files, or wherever I was actually searching for it.
 
-Having realized I should be keeping most of my personal references in a standard place,  I've decided it would be beneficial to just keep everything in a Github repo that I will try to periodically update. 
+Having realized I should be keeping most of my personal references in a standard place,  I've decided it would be beneficial to just keep everything in a GitHub repo that I will try to periodically update. 
 
 As a lot of these technologies are constantly changing, hopefully a lot of content here will continue to be updated to reflect the latest useful resources for graphics. 
 
@@ -130,6 +130,10 @@ Breakdowns
 ### Maths
 #### Linear Algebra
 [Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+[Vector Math In Games](https://www.gamedev.net/articles/programming/math-and-physics/practical-use-of-vector-math-in-games-r2968/)
+[Visualizing Algorithms](https://bost.ocks.org/mike/algorithms/)
+[Linear Algebra for Game Dev](http://blog.wolfire.com/2009/07/linear-algebra-for-game-developers-part-1/)
+[Reaction Diffusion](http://www.neilblevins.com/cg_education/reaction_diffusion_in_pshop/reaction_diffusion_in_pshop.htm)
 
 ### Languages
 #### C++
@@ -141,6 +145,8 @@ Breakdowns
 - [Learn Python](https://www.learnpython.org/)
 - [Python IO](https://en.wikibooks.org/wiki/Python_Programming/Input_and_Output)
 - [Python Real Time Output](http://blog.endpoint.com/2015/01/getting-realtime-output-using-python.html)
+- [Real Python](https://realpython.com)
+
 #### C#
 - [C# Tutorial](https://csharp.net-tutorials.com/)
 #### Rust
