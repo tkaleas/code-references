@@ -160,8 +160,13 @@ Breakdowns
 ### Github
 - [Github Markdown Guide](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 ### Machine Learning
-- [Deep Learning for Computer Graphics](http://geometry.cs.ucl.ac.uk/dl4g/)
+- [Deep Learning Book](https://www.deeplearningbook.org/)
 - [Andrew Ng's Machine Learning - Coursera](https://www.coursera.org/learn/machine-learning)
+- [Elements of Statistical Learnin](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf)
+    - Chapters 1-4, 7-8
+- [TensorFlow/PyTorch Examples](http://cs231n.github.io/aws-tutorial/)
+- [Research Links](https://arxiv.org)
+- [Kaggle](https://www.kaggle.com)
 
 ### RegEx
 - [Regular Expression Testing](https://regex101.com/r/cM5iO3/2)
